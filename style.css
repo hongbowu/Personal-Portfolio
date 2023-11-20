@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    border: solid 1px purple;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(85, 83, 83);
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    
+}
+header h2 {
+    background-color: rgb(110, 231, 225);
+    padding: 2px 5px 2px 25px;
+}
+nav a {
+    color:rgb(110, 231, 225);
+    font-weight: bolder;
+    text-underline-position: under;
+}
+.photo-about {
+    display: flex;
+}
