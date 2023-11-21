@@ -72,6 +72,7 @@ nav a:hover {
 .container:hover {
     box-shadow: 7px -5px 6px 2px;
     filter: blur(3px);
+    transform: scale(110%);
 }
 nav a:active {
     text-decoration-color: blue;
