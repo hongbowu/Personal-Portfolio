@@ -120,12 +120,12 @@ nav a:active {
     .align-left {
         float: left;
         margin-right: 3%;
-        border-right: solid powderblue;
+        /* border-right: solid powderblue; */
     
     }
-    #projects {
-        padding-bottom: 101vw;
-    }
+    /* #projects {
+        padding-bottom: 101vw; */
+    /* } */
     /* .project {
         border-left: solid powderblue;
         padding-left: 25px;
@@ -133,9 +133,9 @@ nav a:active {
 
     .container:nth-child(1){
         min-width: 100%;
-    }
+    /* }
     #contact-me {
-        padding-right: 20px;
+        padding-right: 20px; */
     }
     .contact nav {
         display: flex;
