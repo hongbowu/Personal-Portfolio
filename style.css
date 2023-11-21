@@ -12,21 +12,23 @@ header {
 }
 nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
     
 }
 header h2 {
-    background-color: rgb(110, 231, 225);
+    background-color:powderblue;
     padding: 2px 5px 2px 25px;
 }
 nav a {
-    color:rgb(110, 231, 225);
+    color:powderblue;
     font-weight: bolder;
     text-underline-position: under;
 }
 .photo-about {
     display: flex;
+}
+.contact nav {
+    display: flex;
+    flex-wrap: wrap;
 }
