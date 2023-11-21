@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    border: solid 1px purple;
+
 }
 
 header {
@@ -10,25 +10,58 @@ header {
     flex-wrap: wrap;
     background-color: rgb(85, 83, 83);
 }
-nav {
+header nav a {
     display: flex;
     align-items: center;
     gap: 4px;
-    
+    border:solid powderblue;
+    border-radius: 8px;
+    text-underline-position: under;
+    color:powderblue;
+    font-weight: bolder;
 }
 header h2 {
     background-color:powderblue;
     padding: 2px 5px 2px 25px;
 }
-nav a {
-    color:powderblue;
-    font-weight: bolder;
-    text-underline-position: under;
-}
+
 .photo-about {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.contact nav {
+
+.photo-about img {
+    max-width: 100%;
+    max-height: 300px;
+    border: solid 4px powderblue;
+}
+.project h2 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    text-align: center;
+}
+.contact nav a {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: powderblue;
+}
+.container {
+    position: relative;
+}
+.container img {
+    width: 100%;
+    border: solid 4px powderblue;
+}
+.project-title {
+    position: absolute;
+    background-color: #ed7171;
+    bottom: 5%;
 }
