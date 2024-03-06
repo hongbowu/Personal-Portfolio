@@ -26,23 +26,29 @@ header h2 {
     padding: 2px 5px 2px 25px;
 }
 
-.photo-about {
+.about {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.about-me {
-    /* change the font size to make it easy to read */
-    font-size: large;
+    flex-direction: column;
+    align-items: center; /* put content align center */
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: row; /* put image and context in a row */
+    align-items: center; /* keep context centered */
+    gap: 20px; /* make some space between image and context */
+  }
+  
+  .photo-about {
+    width: 280px;
+    height: 280px;
+    /* min-width: 30%; */
 }
 
-.photo-about img {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    border: solid 4px powderblue;
-}
+  .about-me {
+    max-width: 75%; /* set max width */
+  }
+  
 .container {
     position: relative;
 }
@@ -87,65 +93,12 @@ nav a:active {
 nav a:focus {
     text-decoration-color: blue;
 }
-/* add resposive element */
-@media  screen and (min-width: 576px) {
-    .about-me {
-        display: flex;
-        text-align: center;
-        font-size: medium;
+
+@media screen and (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center; 
     }
-}
-@media  screen and (min-width: 768px) {
-    nav {
-        display: flex;
-        gap: 12px;
-        margin-right: 2%;
-        font-size: 100%;
-    }
-    body {
-        margin: 2%;
-    }
-    .photo-about {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    .photo-about img {
-        max-width: 50%;
-        margin: 2%;
-    }
-    .about-me {
-        display: flex;
-        line-height: 2em;
-    }
-    .project {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .container {
-       width: 50%;
-       display: flex;
-    }
-    .contact nav {
-        display: flex;
-        justify-content: center;
-    }
-}
-@media screen and (min-width: 992px) {
-    .align-left {
-        float: left;
-        margin-right: 3%;
+
     
-    }
-
-    .container:nth-child(1){
-        min-width: 100%;
-
-    }
-    .contact nav {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        padding-top: 2%;
-        margin-left: 175px;
-    }
-}
+  }
